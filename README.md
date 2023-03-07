@@ -6,7 +6,11 @@ This document analyzes feasible models for an algorithmic trading approach of em
 
 ## Cumulative returns for the original training data
 
+According to the following diagram, the strategic returns are higher than the actual returns. In other words, the strategic approach is performing better than the actual returns. 
+
 ![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns.png)
+
+Diagram 1
 
 ## Cumulative returns for the with 6 months training data
 
@@ -14,11 +18,15 @@ According to the following diagram, it is clear that increasing the training dat
 
 ![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_6_months_training_data.png)
 
+Diagram 2
+
 ## Cumulative returns for SMA 40 and 200
 
 > Please note that for the following chart, SMA short windows has been assigen to 40 and long windows has been assigned to 100. However, the time period of the training has been kept intact. However, the performance of the algorithm has not been increased because of this change.
 
 ![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_sma_40_200.png)
+
+Diagram 3
 
 ## Cumulative returns for optimized algorithm
 
@@ -26,18 +34,22 @@ According to the following diagram, it is clear that increasing the training dat
 
 ![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_optimized.png)
 
+Diagram 4
+
 ## LogisticRegression classification returns
 
 > For this approach, LogisticRegression classification method has been used.
 
-![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_optimized.png)
+![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_logi.png)
+
+Diagram 5
 
 ## Conclustion
 
 Did this new model perform better or worse than the provided baseline model?
-Answer: No. The reason for this is after changing the classification model, the new model worked well until mid of 2020. However, after that the return of the new algo with LogisticRegression didn't work well.
+Answer: No. The reason for this is, according to the diagram 5, after changing the classification model, the new model worked well until mid of 2020. However, after that the return of the new algo with LogisticRegression didn't work well.
 
 Did this new model perform better or worse than your tuned trading algorithm?
-Answer: No. It worked better than the tuned trading algorithm until the mid of 2020. Nevertheless, it starts to decline after that. So, the tuned algorithm is better than the new algo based on LogisticRegression.
+Answer: No. According to the diagram 5, it worked better than the tuned trading algorithm until the mid of 2020. Nevertheless, it starts to decline after that. So, the tuned algorithm is better than the new algo based on LogisticRegression.
 
 Therefore, in conclusion, the tuned algorithm which has been trained for six months with 5 and 100 for short and long SMA window respectively, could be considered to be the best approach among these approaches
