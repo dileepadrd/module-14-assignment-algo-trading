@@ -20,3 +20,9 @@
 > For this approach, SMA short window and long window has been set to 5 and 100 respectively. Furthermore, the training time period has been changed to 6 months. By doing so, the performance of the algorithm could be improved significantly. 
 
 ![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_optimized.png)
+
+## LogisticRegression classification returns 
+
+> For this approach, LogisticRegression classification method has been used.  
+
+![Cumulative Returns](./Images/cumprod_actual_vs_strategy_returns_optimized.png)
